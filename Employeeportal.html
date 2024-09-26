@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> COMPANY HR PORtAL</title>
+    <link rel="icon" href="./images/icon image.png">
+    <style>
+        body {
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background-color: #CEEFF2;
+        }
+
+        header {
+            margin: 0;
+            padding: 0;
+            background-color: #a2c81a;
+            color: aliceblue;
+            text-align: center;
+
+        }
+
+        .navitem {
+            display: inline-block;
+            padding: 20px;
+        }
+        .navitem a {
+            text-decoration: none;
+            color: rgb(226, 240, 253);
+
+        }
+        .registerform {
+           width: max-content;
+           margin-left: auto ;
+           margin-right: auto ;
+        }
+        table{
+            width: 100;
+        }
+        .employeetable {
+            text-align: center;
+        }
+        table{
+           margin-left: auto;
+           margin-right: auto;
+            width: 100;
+            border-collapse: collapse;
+
+        }
+        th, td{
+            border: 1px solid #395c60;
+            padding: 0;
+        }
+    
+        .contactus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contactus h2, 
+.contactus p, 
+.contactus iframe {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+        
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to company HR Portal</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee Directory </a></li>
+                <li class="navitem"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <image src="./images/image1.png" style="width: 100%;"></image>
+    <section id="employee-registration" class="registerform">
+        <h2>Employee Registration</h2>
+        <p>Fill the below form to Register as <em>Employee</em></p>
+        <form>
+            <label form="name">Name:</label>
+            <input type="text" id="name"><br><br>
+            <label form="email">Email:</label>
+            <input type="email" id="email"><br><br>
+            <label form="age">Age:</label>
+            <input type="number" id="age"><br><br>
+            <label form="password">Password:</label>
+            <input type="password" id="password"><br><br>
+            <label for="role">Select Role:</label>
+            <select>
+                <option>Software Engineer</option>
+                <option>product manager</option>
+                <option>Designer</option>
+                <option>HR representative</option>
+            </select><br><br>
+            <label for="joiningdate">Select joining date:</label>
+            <input type="date" id="joiningdate"><br><br>
+            <input type="submit">
+        </form>
+    </section>
+    <section id="employee-directory" class="employeetable">
+        <h2>Employee Directory</h2>
+        <p>List of all register employees.</p>
+        <table>
+            <tr>
+                <th>Employee ID </th>
+                <th>Employee Name </th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>591</td>
+                <td>rahul</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>600</td>
+                <td>rishav</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>601</td>
+                <td>rohit</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>604</td>
+                <td>sachin</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>616</td>
+                <td>sumit</td>
+                <td>product manager</td>
+            </tr>
+
+        </table>
+
+    </section>
+    <section id="contact us " class="contactus">
+        <h2>Contact Us</h2>
+        <p>you can contact us at company@official.com or visit us between 9AM - 6PM.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57957.67259180878!2d84.94088100900153!3d24.783310612536063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32a440a1b3c1f%3A0xcef6b223bdbf34a6!2sGaya%2C%20Bihar!5e0!3m2!1sen!2sin!4v1724504211246!5m2!1sen!2sin"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <p>&copy;2023 Company Name</p>
+    </footer>
+
+</body>
+
+</html>
